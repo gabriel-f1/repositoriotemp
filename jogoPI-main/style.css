@@ -1,0 +1,262 @@
+/* style do resto do código (não precisava, mas como esse projeto é uma "cópia" do jogo original, então vou deixar assim pra economizar tempo) */
+
+
+header {
+    background-color: #fffffffa; 
+    color: #000000;
+    padding: 15px 0 25px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 1;
+}
+
+img {
+    border-radius: 18px;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #000000; 
+    text-align: center;
+    padding: 12px 0;
+    font-size: 14px;
+    margin-top: auto; /* garante que cole no final */
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000; /* texto padrão preto */
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-image: url('fundo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px) brightness(85%); 
+    z-index: -1;
+}
+
+/* Corpo principal */
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    padding: 40px 20px; /* espaço interno para não colar nas bordas pq eu n sei '-' */
+}
+
+.baloon {
+    background-color: rgba(255, 255, 255, 0.95);
+    font-size: 1.5rem;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px auto;
+    padding: 18px 22px;
+    border-radius: 12px;
+    width: 80%;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.06);
+}
+
+/* menor aq */
+.baloonq {
+    background-color: rgba(255, 255, 255, 0.95);
+    font-size: 1.1rem;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px auto;
+    padding: 12px 16px;
+    border-radius: 12px;
+    width: 20%;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.04);
+}
+
+/* container principal main das coisas etc */
+.buttons-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    width: 100%;
+    z-index: 1;
+}
+
+/* botões que eu sei que é desnecessário ter 3 tipos quase iguais */
+.buttons-row .button-container button {
+    width: 350px;
+    height: 150px;
+    padding: 0;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid rgba(0,0,0,0.12);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-row .button-container2 button {
+    width: 250px;
+    height: 100px;
+    padding: 0;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid rgba(0,0,0,0.12);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-row .button-container3 button {
+    width: 250px;
+    height: 100px;
+    padding: 0;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    background-color: #ffffff; 
+    border: 2px solid rgba(0,0,0,0.12);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* hover */
+.buttons-row .button-container button:hover {
+    background-color: #e8f5e9; 
+    border-color: rgba(46,112,49,0.22);
+    transform: scale(1.05);
+}
+
+.buttons-row .button-container2 button:hover {
+    background-color: #e8f5e9;
+    border-color: rgba(46,112,49,0.22);
+    transform: scale(1.05);
+}
+
+.buttons-row .button-container3 button:hover {
+    background-color: #e8f5e9;
+    border-color: rgba(46,112,49,0.22);
+    transform: scale(1.05);
+}
+
+
+
+.buttons-row .button-container button a {
+    text-decoration: none;
+    color: inherit; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150%;
+    height: 150%;
+    font-weight: bold;
+}
+
+
+.buttons-row .button-container2 button a {
+    text-decoration: none;
+    color: inherit; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150%;
+    height: 150%;
+    font-weight: bold;
+}
+
+.buttons-row .button-container3 button a {
+    text-decoration: none;
+    color: inherit; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150%;
+    height: 150%;
+    font-weight:bold;
+}
+
+
+
+@media (max-width: 768px) {
+    main::before {
+        height: 100vh;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        font-size: 20px;
+        padding: 8px 0;
+    }
+
+    img {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+
+    .baloon {
+        font-size: 1rem;
+        width: 92%;
+        padding: 12px 14px;
+    }
+
+    .baloonq {
+        width: 40%;
+        font-size: 0.95rem;
+        padding: 10px 12px;
+    }
+
+    .buttons-row {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .buttons-row .button-container button {
+        width: 220px;
+        height: 220px;
+        font-size: 1.2rem;
+    }
+}
